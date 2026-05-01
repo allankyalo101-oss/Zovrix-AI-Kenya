@@ -1,0 +1,15 @@
+flask
+gunicorn
+fastapi
+uvicorn
+requests
+python-dotenv
+pydantic
+supabase
+openai
+httpx
+twilio
+groq
+jinja2
+sqlalchemy
+psycopg2-binary

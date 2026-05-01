@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CloudStaff Kenya — AI Employees for Your Business</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#0E0E0E;--paper:#F5F0E8;--gold:#B8972E;--gold-lt:#D4AF5A;--muted:#6B6355;--border:rgba(184,151,46,0.25)}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;background:var(--ink);color:var(--paper);overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 4rem;background:rgba(14,14,14,0.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-logo{font-family:"Cormorant Garamond",serif;font-size:1.35rem;font-weight:600;letter-spacing:0.08em;color:var(--gold-lt)}
+.nav-logo span{color:var(--paper)}
+.nav-links{display:flex;gap:2rem}
+.nav-links a{font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color 0.2s}
+.nav-links a:hover{color:var(--gold-lt)}
+.nav-cta{font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.55rem 1.4rem;border:1px solid var(--gold);color:var(--gold-lt);text-decoration:none;transition:all 0.2s}
+.nav-cta:hover{background:var(--gold);color:var(--ink)}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:8rem 4rem 5rem;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 70% 50%,rgba(184,151,46,0.07) 0%,transparent 70%)}
+.hero-content{position:relative;max-width:680px;animation:fadeUp 0.9s ease both}
+.eyebrow{font-family:"DM Mono",monospace;font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;display:flex;align-items:center;gap:0.75rem}
+.eyebrow::before{content:"";display:block;width:2rem;height:1px;background:var(--gold)}
+.hero h1{font-family:"Cormorant Garamond",serif;font-size:clamp(3.2rem,6vw,5.5rem);font-weight:700;line-height:1.0;margin-bottom:1.75rem}
+.hero h1 em{font-style:italic;color:var(--gold-lt)}
+.hero p{font-size:1.05rem;font-weight:300;line-height:1.75;color:rgba(245,240,232,0.7);max-width:520px;margin-bottom:2.5rem}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-primary{display:inline-block;padding:0.85rem 2rem;background:var(--gold);color:var(--ink);font-size:0.82rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;transition:background 0.2s}
+.btn-primary:hover{background:var(--gold-lt)}
+.btn-ghost{display:inline-block;padding:0.85rem 2rem;border:1px solid rgba(245,240,232,0.2);color:rgba(245,240,232,0.65);font-size:0.82rem;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;transition:all 0.2s}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold-lt)}
+.stats{position:absolute;right:4rem;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:2rem}
+.stat{text-align:right;padding-right:1.5rem;border-right:1px solid var(--border)}
+.stat .num{font-family:"Cormorant Garamond",serif;font-size:2.8rem;font-weight:600;color:var(--gold-lt);line-height:1}
+.stat .lbl{font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-top:0.3rem}
+section{position:relative;z-index:1}
+.inner{max-width:1200px;margin:0 auto;padding:6rem 4rem}
+.sec-lbl{font-family:"DM Mono",monospace;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:flex;align-items:center;gap:0.75rem}
+.sec-lbl::before{content:"";display:block;width:1.5rem;height:1px;background:var(--gold)}
+.sec-title{font-family:"Cormorant Garamond",serif;font-size:clamp(2.2rem,4vw,3.5rem);font-weight:600;line-height:1.1;margin-bottom:1.25rem}
+.sec-title em{font-style:italic;color:var(--gold-lt)}
+.sec-sub{font-size:1rem;font-weight:300;line-height:1.8;color:rgba(245,240,232,0.6);max-width:540px}
+.divider{width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent)}
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-top:4rem;border:1px solid var(--border)}
+.how-card{background:var(--ink);padding:2.5rem;transition:background 0.2s}
+.how-card:hover{background:#141210}
+.how-num{font-family:"DM Mono",monospace;font-size:0.65rem;letter-spacing:0.2em;color:var(--gold);margin-bottom:1.5rem}
+.how-card h3{font-family:"Cormorant Garamond",serif;font-size:1.5rem;font-weight:600;margin-bottom:0.75rem}
+.how-card p{font-size:0.9rem;font-weight:300;line-height:1.75;color:rgba(245,240,232,0.55)}
+.team-sec{background:#0A0A08}
+.team-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.5rem;margin-top:4rem}
+.tc{border:1px solid var(--border);padding:2rem 1.5rem;position:relative;transition:border-color 0.2s,transform 0.2s}
+.tc:hover{border-color:var(--gold);transform:translateY(-3px)}
+.tc.live{border-color:rgba(184,151,46,0.5)}
+.badge-live{position:absolute;top:1rem;right:1rem;font-family:"DM Mono",monospace;font-size:0.58rem;letter-spacing:0.15em;text-transform:uppercase;background:var(--gold);color:var(--ink);padding:0.2rem 0.5rem}
+.badge-soon{position:absolute;top:1rem;right:1rem;font-family:"DM Mono",monospace;font-size:0.58rem;letter-spacing:0.15em;text-transform:uppercase;border:1px solid var(--muted);color:var(--muted);padding:0.2rem 0.5rem}
+.avatar{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--gold) 0%,#6B4F1A 100%);display:flex;align-items:center;justify-content:center;font-family:"Cormorant Garamond",serif;font-size:1.4rem;font-weight:600;color:var(--ink);margin-bottom:1.25rem}
+.tc.coming .avatar{background:linear-gradient(135deg,#2A2520 0%,#1A1510 100%);color:var(--muted);border:1px solid var(--border)}
+.t-name{font-family:"Cormorant Garamond",serif;font-size:1.35rem;font-weight:600;margin-bottom:0.3rem}
+.t-role{font-family:"DM Mono",monospace;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.tc.coming .t-role{color:var(--muted)}
+.t-desc{font-size:0.82rem;font-weight:300;line-height:1.65;color:rgba(245,240,232,0.5)}
+.t-price{margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--border);font-family:"DM Mono",monospace;font-size:0.75rem;color:var(--gold-lt)}
+.tc.coming .t-price{color:var(--muted)}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:4rem}
+.pc{border:1px solid var(--border);padding:2.5rem;position:relative;transition:border-color 0.2s}
+.pc:hover{border-color:rgba(184,151,46,0.5)}
+.pc.feat{border-color:var(--gold)}
+.feat-lbl{position:absolute;top:-1px;left:50%;transform:translateX(-50%);font-family:"DM Mono",monospace;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;background:var(--gold);color:var(--ink);padding:0.25rem 1rem;white-space:nowrap}
+.p-name{font-family:"Cormorant Garamond",serif;font-size:1.6rem;font-weight:600;margin-bottom:0.4rem}
+.p-tag{font-size:0.82rem;color:var(--muted);margin-bottom:2rem;font-weight:300}
+.p-price{font-family:"Cormorant Garamond",serif;font-size:3rem;font-weight:700;color:var(--gold-lt);line-height:1;margin-bottom:0.35rem}
+.p-price span{font-size:1rem;font-weight:400;color:var(--muted);font-family:"DM Sans",sans-serif}
+.p-setup{font-family:"DM Mono",monospace;font-size:0.68rem;color:var(--muted);margin-bottom:2rem}
+.p-feats{list-style:none;margin-bottom:2.5rem}
+.p-feats li{font-size:0.85rem;font-weight:300;color:rgba(245,240,232,0.65);padding:0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.05);display:flex;gap:0.6rem}
+.p-feats li::before{content:"4";color:var(--gold);flex-shrink:0}
+.p-cta{display:block;text-align:center;padding:0.85rem;border:1px solid var(--gold);color:var(--gold-lt);font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;transition:all 0.2s}
+.p-cta:hover,.pc.feat .p-cta{background:var(--gold);color:var(--ink)}
+.ob-sec{background:#080806}
+.ob-steps{display:flex;margin-top:4rem;border:1px solid var(--border)}
+.step{flex:1;padding:2.25rem 2rem;border-right:1px solid var(--border)}
+.step:last-child{border-right:none}
+.s-num{font-family:"DM Mono",monospace;font-size:0.62rem;letter-spacing:0.2em;color:var(--gold);margin-bottom:1rem}
+.step h4{font-family:"Cormorant Garamond",serif;font-size:1.2rem;font-weight:600;margin-bottom:0.6rem}
+.step p{font-size:0.82rem;font-weight:300;line-height:1.65;color:rgba(245,240,232,0.5)}
+.cta-sec{padding:7rem 4rem;text-align:center;position:relative;overflow:hidden}
+.cta-sec::before{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:300px;background:radial-gradient(ellipse,rgba(184,151,46,0.08) 0%,transparent 70%);pointer-events:none}
+.cta-sec h2{font-family:"Cormorant Garamond",serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:700;line-height:1.1;margin-bottom:1.25rem}
+.cta-sec h2 em{font-style:italic;color:var(--gold-lt)}
+.cta-sec p{font-size:1rem;font-weight:300;color:rgba(245,240,232,0.55);margin:0 auto 2.5rem;max-width:440px}
+.wa-btn{display:inline-flex;align-items:center;gap:0.75rem;padding:1rem 2.25rem;background:#25D366;color:#fff;font-size:0.85rem;font-weight:500;letter-spacing:0.08em;text-decoration:none;text-transform:uppercase;transition:opacity 0.2s}
+.wa-btn:hover{opacity:0.88}
+.wa-btn svg{width:18px;height:18px;flex-shrink:0}
+footer{border-top:1px solid var(--border);padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
+.f-logo{font-family:"Cormorant Garamond",serif;font-size:1.1rem;font-weight:600;color:var(--gold-lt);letter-spacing:0.06em}
+.f-note{font-family:"DM Mono",monospace;font-size:0.65rem;letter-spacing:0.1em;color:var(--muted)}
+.f-links{display:flex;gap:1.5rem}
+.f-links a{font-size:0.75rem;color:var(--muted);text-decoration:none;transition:color 0.2s}
+.f-links a:hover{color:var(--gold-lt)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity 0.7s ease,transform 0.7s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(max-width:1024px){.team-grid{grid-template-columns:repeat(3,1fr)}.stats{display:none}}
+@media(max-width:768px){nav{padding:1rem 1.5rem}.nav-links{display:none}.hero{padding:7rem 1.5rem 4rem}.inner{padding:4rem 1.5rem}.how-grid{grid-template-columns:1fr}.team-grid{grid-template-columns:repeat(2,1fr)}.pricing-grid{grid-template-columns:1fr}.ob-steps{flex-direction:column}.step{border-right:none;border-bottom:1px solid var(--border)}.step:last-child{border-bottom:none}footer{flex-direction:column;align-items:flex-start}}
+@media(max-width:480px){.team-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav><div class="nav-logo">Cloud<span>Staff</span> Kenya</div><div class="nav-links"><a href="#team">Our Team</a><a href="#pricing">Pricing</a><a href="#onboarding">How It Works</a></div><a href="#contact" class="nav-cta">Hire Now</a></nav>
+<section class="hero"><div class="hero-bg"></div><div class="hero-content"><div class="eyebrow">AI Employees — Built for Kenya</div><h1>Your business.<br><em>Always staffed.</em><br>Always on.</h1><p>CloudStaff Kenya provides named AI employees — Sarah, James, David, Mary, and Grace — that Kenyan businesses hire monthly, exactly like human staff. They work 24/7, speak Swahili, know M-Pesa, and cost less than you pay for one person.</p><div class="hero-actions"><a href="#contact" class="btn-primary">Book a Free Demo</a><a href="#team" class="btn-ghost">Meet the Team</a></div></div><div class="stats"><div class="stat"><div class="num">4s</div><div class="lbl">Response time</div></div><div class="stat"><div class="num">24/7</div><div class="lbl">Always on</div></div><div class="stat"><div class="num">80%</div><div class="lbl">Less than human cost</div></div></div></section>
+<div class="divider"></div>
+<section><div class="inner reveal"><div class="sec-lbl">The Process</div><h2 class="sec-title">Hiring an AI employee takes <em>three days.</em></h2><p class="sec-sub">No recruitment. No probation. No risk of no-shows. You decide you need Sarah — three days later, Sarah is working.</p><div class="how-grid"><div class="how-card"><div class="how-num">01 — Discovery</div><h3>We learn your business</h3><p>A one-hour session where we understand your business, your customers, your products, and how you want your AI employee to represent you.</p></div><div class="how-card"><div class="how-num">02 — Build &amp; Customize</div><h3>We configure your employee</h3><p>We build and customize your AI employee for your business — your tone, your prices, your policies, your Swahili. You test them before they go live.</p></div><div class="how-card"><div class="how-num">03 — Go Live</div><h3>Your employee starts work</h3><p>Your AI employee begins handling customer messages. You get a WhatsApp alert for anything that needs your personal attention. Everything else runs automatically.</p></div></div></div></section>
+<div class="divider"></div>
+<section class="team-sec" id="team"><div class="inner reveal"><div class="sec-lbl">The CloudStaff Team</div><h2 class="sec-title">Five employees.<br><em>Zero overhead.</em></h2><p class="sec-sub">Each CloudStaff employee has a defined role, a distinct capability, and a monthly price. Hire one or hire all five.</p><div class="team-grid"><div class="tc live"><div class="badge-live">Live Now</div><div class="avatar">S</div><div class="t-name">Sarah</div><div class="t-role">Customer Support</div><div class="t-desc">Handles all WhatsApp customer inquiries — pricing, availability, orders, directions. Never misses a message. Responds in Swahili or English in under 4 seconds.</div><div class="t-price">From KES 7,500 / month</div></div><div class="tc coming"><div class="badge-soon">Coming Soon</div><div class="avatar">J</div><div class="t-name">James</div><div class="t-role">Receptionist</div><div class="t-desc">Answers calls, books appointments, sends reminders. Designed for clinics, salons, law firms, and service businesses.</div><div class="t-price">KES 15,000 / month</div></div><div class="tc coming"><div class="badge-soon">Coming Soon</div><div class="avatar">D</div><div class="t-name">David</div><div class="t-role">Sales Agent</div><div class="t-desc">Qualifies leads, follows up on every prospect, closes more deals. Built for B2B, real estate, insurance, and sales-driven businesses.</div><div class="t-price">KES 25,000 / month</div></div><div class="tc coming"><div class="badge-soon">Coming Soon</div><div class="avatar">M</div><div class="t-name">Mary</div><div class="t-role">Operations Manager</div><div class="t-desc">Tracks stock, manages scheduling, generates operations reports. For retail shops, restaurants, and distributors.</div><div class="t-price">KES 25,000 / month</div></div><div class="tc coming"><div class="badge-soon">Coming Soon</div><div class="avatar">G</div><div class="t-name">Grace</div><div class="t-role">Finance Manager</div><div class="t-desc">Monitors every M-Pesa transaction, sends weekly P&amp;L reports, flags anomalies. Daraja API integration.</div><div class="t-price">KES 40,000 / month</div></div></div></div></section>
+<div class="divider"></div>
+<section id="pricing"><div class="inner reveal"><div class="sec-lbl">Sarah's Pricing</div><h2 class="sec-title">Start with a pilot.<br><em>No risk.</em> No contract.</h2><p class="sec-sub">Sarah is available now. Begin with our Lite pilot — if she does not impress your customers in 60 days, you walk away free.</p><div class="pricing-grid"><div class="pc"><div class="p-name">Sarah Lite</div><div class="p-tag">Pilot — 60 days maximum</div><div class="p-price">7,500 <span>KES / mo</span></div><div class="p-setup">First month KES 3,000 · No setup fee</div><ul class="p-feats"><li>20 customized response scenarios</li><li>24/7 WhatsApp coverage</li><li>Escalation alerts to your phone</li><li>Weekly interaction summary</li><li>Walk away free if not satisfied</li></ul><a href="#contact" class="p-cta">Start Pilot</a></div><div class="pc feat"><div class="feat-lbl">Most Popular</div><div class="p-name">Sarah Standard</div><div class="p-tag">Full AI customer support</div><div class="p-price">15,000 <span>KES / mo</span></div><div class="p-setup">Setup fee KES 8,000 (waived for early adopters)</div><ul class="p-feats"><li>Unlimited intelligent responses</li><li>Live OpenAI integration</li><li>Conversation memory</li><li>Smart escalation system</li><li>Monthly performance report</li><li>Swahili + English + Sheng</li></ul><a href="#contact" class="p-cta">Hire Sarah</a></div><div class="pc"><div class="p-name">Sarah Pro</div><div class="p-tag">Premium with full governance</div><div class="p-price">25,000 <span>KES / mo</span></div><div class="p-setup">Setup fee KES 10,000</div><ul class="p-feats"><li>Everything in Standard</li><li>Full interaction audit trail</li><li>Business intelligence dashboard</li><li>Priority escalation (60 seconds)</li><li>Uptime guarantee</li><li>Dedicated account support</li></ul><a href="#contact" class="p-cta">Go Pro</a></div></div></div></section>
+<div class="divider"></div>
+<section class="ob-sec" id="onboarding"><div class="inner reveal"><div class="sec-lbl">Onboarding Process</div><h2 class="sec-title">From agreement to <em>live in five days.</em></h2><p class="sec-sub">A structured process that means your AI employee is customized, tested, and trusted before she ever talks to your customers.</p><div class="ob-steps"><div class="step"><div class="s-num">Day 01</div><h4>Discovery Call</h4><p>We learn your business — products, prices, common questions, tone, escalation rules.</p></div><div class="step"><div class="s-num">Day 02–03</div><h4>Build &amp; Configure</h4><p>We build your AI employee with your specific knowledge base and brand voice.</p></div><div class="step"><div class="s-num">Day 04</div><h4>You Test First</h4><p>You message Sarah yourself. You approve her answers before any customer sees them.</p></div><div class="step"><div class="s-num">Day 05</div><h4>Launch &amp; Train</h4><p>Sarah goes live. We train you on escalations, reports, and how to request changes.</p></div><div class="step"><div class="s-num">Day 07 / 14 / 30</div><h4>Check-ins</h4><p>Structured post-launch reviews to optimize performance and expand her capabilities.</p></div></div></div></section>
+<div class="divider"></div>
+<section class="cta-sec" id="contact"><div style="position:relative;z-index:1"><div class="sec-lbl" style="justify-content:center;margin-bottom:1.5rem">Ready to Hire</div><h2>Your next employee starts in <em>three days.</em></h2><p>Message us on WhatsApp. We will schedule a free demo and show you exactly how Sarah handles your customers — live, on your phone, right now.</p><a href="https://wa.me/254700000000?text=Hi%20CloudStaff%2C%20I%27d%20like%20to%20book%20a%20free%20demo%20of%20Sarah." class="wa-btn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp Us for a Free Demo</a></div></section>
+<footer><div class="f-logo">CloudStaff Kenya</div><div class="f-note">AI Employees-as-a-Service &middot; Built for Kenya &middot; Nairobi</div><div class="f-links"><a href="#team">Our Team</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></div></footer>
+<script>const reveals=document.querySelectorAll(".reveal");const io=new IntersectionObserver((entries)=>{entries.forEach((e,i)=>{if(e.isIntersecting){e.target.style.transitionDelay=(i*0.05)+"s";e.target.classList.add("visible");io.unobserve(e.target);}});},{threshold:0.1});reveals.forEach(el=>io.observe(el));</script>
+</body></html>

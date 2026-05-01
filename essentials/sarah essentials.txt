@@ -1,0 +1,30 @@
+#./start_sarah.sh
+#tmux attach -t sarah_log
+#./stop_sarah.sh
+
+# Uvicorn command
+UVICORN_CMD=uvicorn app.main:app reload --port 8000
+uvicorn app.main:app --reload
+uvicorn app.main:app --reload &
+
+NGROK Command
+ngrok http 8000
+ngrok http 8000 &
+ps aux | grep ngrok
+
+# Terminal logs
+tail -f logs/interactions.json
+
+# Kill uvicorn
+kill (pid)
+kill uvicorn
+pkill -f "uvicorn app.main:app"
+
+# Kill ngrok
+kill (pid)
+
+# Check!
+ps aux | grep uvicorn
+
+
+python3 -m scripts.generate_report

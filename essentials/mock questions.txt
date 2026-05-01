@@ -1,0 +1,304 @@
+GREETINGS
+
+hi
+hey
+hello
+helo
+niaje
+sasa
+mambo
+habari
+habari yako
+good morning
+gm
+good afternoon
+good evening
+evening
+morning
+hey there
+hi dear
+hi love
+uko poa
+how r u
+yo
+oya
+
+PRICING
+
+price?
+bei gani
+ni how much
+how much
+how much is the dress
+cost?
+ni ngapi
+ngapi
+hm
+how much pls
+how much hii
+bei yake ni ngapi
+price ya blazer
+sh ngapi
+ksh ngapi
+what’s the price
+whats the price
+how much that one
+how much for the red dress
+hio ni how much
+
+AVAILABILITY
+
+is it available
+iko available
+mko nayo
+do you have it
+uko nayo
+still there
+bado iko
+in stock?
+mnayo
+can i get this
+nataka hii
+hii iko
+is it still available
+bado mnayo
+have you restocked
+
+SIZES
+
+do you have size m
+size m
+size s
+size l
+size xl
+mnayo size small
+what sizes do you have
+size gani
+fit size m
+is it true to size
+uk size 10 iko?
+xxl iko?
+hii ni size kubwa?
+size ndogo iko?
+does it fit large?
+
+DELIVERY TIME
+
+mnadeliver
+delivery?
+inafikanga
+how long does delivery take
+how many days
+delivery time ni gani
+ship to rongai
+same day dispatch?
+next day delivery?
+inafikaje
+can you deliver today
+delivery to westlands
+do you ship outside nairobi
+how long to thika
+
+DELIVERY COST
+
+delivery fee?
+delivery cost ni ngapi
+shipping fee
+shipping cost?
+ni how much delivery
+delivery ni ngapi
+cost ya delivery
+fee ya kuleta
+courier cost to rongai
+how much to deliver to cbd
+
+LOCATION / DIRECTIONS
+
+mko wapi
+location?
+where exactly
+westlands wapi
+near sarit?
+landmark gani
+share location
+pin location
+directions please
+uko ring road?
+how do i get there
+are you near sarit centre
+what building are you in
+google maps link
+
+OPENING HOURS
+
+mko open
+open?
+saa ngapi
+closing time
+mnaclose saa ngapi
+what time do you open
+working hours?
+today open?
+are you open now
+what time do you close
+open on sunday?
+open on public holiday?
+
+PAYMENT / M-PESA
+
+m-pesa
+mpesa
+paybill?
+till number?
+how do i pay
+payment method
+nikilipia
+account number?
+do you accept cash
+card payment?
+bank transfer?
+lipa na mpesa
+send payment details
+can i pay on delivery
+
+RESERVATIONS
+
+can you reserve
+reserve for me
+book it
+hold for me
+niwekee
+wekea kando
+nitakuja later
+keep for me till evening
+can you hold size m
+usiuze hiyo
+
+EXCHANGES
+
+mnaexchange
+exchange policy?
+return policy?
+haifit
+wrong size
+can i change it
+can i return
+within how many days exchange
+what if it doesn’t fit
+do you refund
+
+CUSTOM TAILORING
+
+do you do custom
+custom order?
+nataka kushona
+shona hii design
+made to measure?
+can you alter
+ongeza length
+nipunguzie
+long sleeves instead
+can you adjust waist
+do you tailor to fit
+how long for custom
+
+OUT OF STOCK
+
+imeisha?
+hakuna?
+out of stock?
+sold out?
+bado iko?
+haiko?
+when will you restock
+mtaleta tena
+is it finished
+kwisha?
+
+NEW ARRIVALS
+
+new stock?
+new arrival?
+what’s new
+latest pieces
+umeleta nini mpya
+mpya gani
+new collection?
+show me new dresses
+anything new this week
+what did you restock
+
+WHOLESALE
+
+wholesale?
+bulk order
+bei ya jumla
+reseller price?
+discount kubwa
+many pieces price
+if i buy 10 pieces
+wholesale rates
+do you supply boutiques
+bulk discount?
+
+COMPLAINTS
+
+i’m not happy
+bad service
+wrong item sent
+late delivery
+problem with my order
+disappointed
+this is not what i ordered
+size is wrong
+you delayed
+no response yesterday
+
+ORDER STATUS
+
+where is my order
+order status?
+status ya order
+tracking number?
+imefika?
+bado haijafika
+update on my order
+has my order been dispatched
+delivery update please
+order imefika wapi
+
+FITTING / MATERIAL
+
+can i try on
+fitting?
+fit vizuri?
+is it stretchy
+material gani
+is it cotton
+true to size?
+does it hug body
+is it bodycon
+how is the fitting
+can i come fit
+
+PARKING
+
+parking?
+is there parking
+maegesho
+parking space available?
+free parking?
+secure parking?
+nitapata parking?
+
+ESCALATION / RANDOM EDGE CASES (to confirm fallback works)
+
+do you sell shoes
+can i get a job there
+who is the owner
+what is your email
+can you collaborate
+i want partnership
+do you rent dresses
+send catalogue pdf
+are you hiring

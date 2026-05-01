@@ -1,0 +1,261 @@
+[33mcommit 5f87cc8c8218a66bf5c810813ae41d4d7cf55ed2[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Thu Apr 16 22:37:02 2026 +0300
+
+    kk
+
+[33mcommit df5b968b36cb84bda8f589902976e072bd268ec0[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Thu Apr 16 22:37:02 2026 +0300
+
+    kk
+
+[33mcommit a57c081fdf1b4b55682799b6bc8dbcfec0e1bc1f[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Wed Apr 15 15:07:30 2026 +0300
+
+    MILESTONE: ONBOARDING KISHA-TECH
+
+[33mcommit 4ac98e2527879398e582825206afd2286f7e6a3b[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Wed Apr 15 15:07:30 2026 +0300
+
+    MILESTONE: ONBOARDING KISHA-TECH
+
+[33mcommit 7dc6eafc20af15c90f00f192c52af26c6178af8e[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Tue Apr 7 11:49:45 2026 +0300
+
+    fix for twilio rate-limit + escalation flow AND whatsapp -> web redirection when customer is new
+
+[33mcommit 8c8c015b01102cefa6136d57faadc06b19da71da[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Tue Apr 7 11:49:45 2026 +0300
+
+    fix for twilio rate-limit + escalation flow AND whatsapp -> web redirection when customer is new
+
+[33mcommit da386ea61c555ef9e08096bb162785859e868b28[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Mon Apr 6 12:10:22 2026 +0300
+
+    Zovrix AI Kenya
+
+[33mcommit 6c1a2adf7feed3593d8649b32a3d868a49a49425[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Mon Apr 6 12:10:22 2026 +0300
+
+    Zovrix AI Kenya
+
+[33mcommit 07cb00214912cf070ce9288a94d1e441360e45dc[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Wed Apr 1 09:45:11 2026 +0300
+
+    fix: Sarah should create order and fetch its status through the flow of payment with customer.
+
+[33mcommit ce736fbbe5c8ba16c7be901e334b245031af126b[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Wed Apr 1 09:45:11 2026 +0300
+
+    fix: Sarah should create order and fetch its status through the flow of payment with customer.
+
+[33mcommit 4ec510da51f55be5cac03a5189546e8482ed21e0[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Tue Mar 31 19:28:14 2026 +0300
+
+    fix: Duplicate dead code
+
+[33mcommit bb178de47141ce2aafd406eb17b119e1631b1863[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Tue Mar 31 19:28:14 2026 +0300
+
+    fix: Duplicate dead code
+
+[33mcommit 43a98a1376632be3e629d45e6a4e09d48dca99d0[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Tue Mar 31 09:44:22 2026 +0300
+
+    live intasend ENV
+
+[33mcommit 7bc6f49e1cb6b9a2bb417db5237f63391055396d[m[33m ([m[1;35mrefs/stash[m[33m)[m
+Merge: 130212f 1a31e0f
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Mon Mar 30 21:50:20 2026 +0300
+
+    On master: just stash these incase we need to reverse orchstrator
+
+[33mcommit 130212fedcc719d67d4d51944136835a3309657e[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Mon Mar 30 14:21:31 2026 +0300
+
+    kk
+
+[33mcommit 06865aa04150c247a21bec1e85677bfa0cc69a07[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Mon Mar 30 14:21:31 2026 +0300
+
+    kk
+
+[33mcommit 957f7f03408deb87f2093cc9a7924b6c09050d8b[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Mon Mar 30 13:34:44 2026 +0300
+
+    reverse orchestrator
+
+[33mcommit 0855027a2469c36bb60e508184ec032cbac7d11e[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Mon Mar 30 13:34:44 2026 +0300
+
+    reverse orchestrator
+
+[33mcommit 1fdab517b6f33b61b3e47729c99832dfd15debf7[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Mon Mar 30 13:29:35 2026 +0300
+
+    auto-transition after payment confirmation
+
+[33mcommit dbc985aea94367798846617afcecc3d1450fb6a3[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Mon Mar 30 13:29:35 2026 +0300
+
+    auto-transition after payment confirmation
+
+[33mcommit 1561561bc12a86dcbcfd01fea33636bd2dc4ca7f[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Mon Mar 30 12:23:05 2026 +0300
+
+    fix: orchestrator now fulfils, payment (STK Push)
+
+[33mcommit 039e0328c4a48c432ed1b3d6e787db123ce24920[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Mon Mar 30 12:23:05 2026 +0300
+
+    fix: orchestrator now fulfils, payment (STK Push)
+
+[33mcommit 08b3e6fd403d55334ffb436decf06eae1823d398[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Sat Mar 28 20:34:49 2026 +0300
+
+    Sarah should not guess, assume, or hallucinate anything about any business
+
+[33mcommit d7a7390c34e98858c01d57ba33529e8c2729fabc[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Sat Mar 28 20:34:49 2026 +0300
+
+    Sarah should not guess, assume, or hallucinate anything about any business
+
+[33mcommit 8eee34c8086b5433b3b2c6dfab7eff568ce19c7a[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Fri Mar 27 15:15:37 2026 +0300
+
+    Fixes for final attempt of CloudOven onboarding
+
+[33mcommit 03facff6a537d224b75a0de612716721ad213a5f[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Fri Mar 27 15:15:37 2026 +0300
+
+    Fixes for final attempt of CloudOven onboarding
+
+[33mcommit 216648d816dd5f3560abd99cc5cabe7db5126375[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Thu Mar 26 15:51:39 2026 +0300
+
+    kk
+
+[33mcommit 5bfa959e5689297bedebc1ebdf252efaf3413402[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Thu Mar 26 15:51:39 2026 +0300
+
+    kk
+
+[33mcommit 9fb003a70e223508f5a6ae74f81eb5af21d5b0ea[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Wed Mar 25 17:40:14 2026 +0300
+
+    kk
+
+[33mcommit 9f00c294fe8c9cb3f93c2d5e94faa960eeab75f1[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Wed Mar 25 17:40:14 2026 +0300
+
+    kk
+
+[33mcommit 78b59e3796269153001cf4b5088ed72be67e8f43[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Wed Mar 25 13:34:17 2026 +0300
+
+    fix no mock . Add Groq
+
+[33mcommit f5839e6f3214dec48b1663e7e446633fc2465654[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Wed Mar 25 13:34:17 2026 +0300
+
+    fix no mock . Add Groq
+
+[33mcommit 693f55c89d350a508950c1519e7ccd2db5780d3d[m
+Author: allankyalo101-oss <allankyalo101@gmail.com>
+Date:   Tue Mar 24 19:19:10 2026 +0300
+
+    kk
+
+[33mcommit 4f2ac61dc76032523afefd0e75b0b98010aaf891[m
+Author: allankyalo101-oss <allankyalo101@gmail.com>
+Date:   Tue Mar 24 19:19:10 2026 +0300
+
+    kk
+
+[33mcommit bba4b5867993caad5f082d51523bf4a78ee3d468[m
+Author: allankyalo101-oss <allankyalo101@gmail.com>
+Date:   Mon Mar 23 14:39:41 2026 +0300
+
+    update work-flow
+
+[33mcommit 17517304107a33ac9ea737c2ab3c100cbeedc88c[m
+Author: allankyalo101-oss <allankyalo101@gmail.com>
+Date:   Mon Mar 23 14:39:41 2026 +0300
+
+    update work-flow
+
+[33mcommit 05eed3c4a87b10303bf46d352e8284ee3524782a[m
+Author: allankyalo101-oss <allankyalo101@gmail.com>
+Date:   Sun Mar 22 23:06:50 2026 +0300
+
+    re-purpose orchestrator for granular logs
+
+[33mcommit 06218535c2c59b90e32d1906710051271ac6e2a6[m
+Author: allankyalo101-oss <allankyalo101@gmail.com>
+Date:   Sun Mar 22 23:06:50 2026 +0300
+
+    re-purpose orchestrator for granular logs
+
+[33mcommit fb42805de9388c2333e361e49ddff5f24b7141c4[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Mon Mar 2 14:34:29 2026 +0300
+
+    feat: unified CloudStaff system — merge confirmed live
+    
+    Governance layer fully integrated and verified:
+    - Orchestrator wrapping every message execution
+    - Ledger appending authoritative records
+    - Logger writing analytics in parallel
+    - Integrity validation on every request
+    - Alerting ready (graceful degradation if SMTP unconfigured)
+    
+    Verified: 5 messages processed, 200 OK, zero crashes.
+    sarah-v1 retired. cloudstaff/ is the sole active repository.
+    
+    Status: Architecture complete. First client acquisition begins now.
+
+[33mcommit dee21d6e5a669e707f9d341c17381c85ffeb6719[m
+Author: CLOUDSTAFF <allankyalo101@gmail.com>
+Date:   Mon Mar 2 14:34:29 2026 +0300
+
+    feat: unified CloudStaff system — merge confirmed live
+    
+    Governance layer fully integrated and verified:
+    - Orchestrator wrapping every message execution
+    - Ledger appending authoritative records
+    - Logger writing analytics in parallel
+    - Integrity validation on every request
+    - Alerting ready (graceful degradation if SMTP unconfigured)
+    
+    Verified: 5 messages processed, 2

@@ -1,0 +1,147 @@
+Greetings
+hi
+hello
+hey
+niaje
+sasa
+habari
+good morning
+gm
+how are you
+yo
+2. Pricing / Cost
+how much
+price please
+what is the cost
+tell me the price
+cost of this item
+how much does it cost
+price ya
+sh ngapi
+ksh ngapi
+3. Product Inquiry
+show me dresses
+what clothes do you have
+new arrivals
+do you have this design
+show available items
+what products are available
+4. Sizes
+what sizes do you have
+do you have my size
+is this available in large
+size options please
+size m
+size s
+size l
+size xl
+m
+small
+medium
+large
+xxl
+5. Availability
+is this available
+do you have this in stock
+can I get this
+is it still available
+do you still have this dress
+is this item in stock
+still available
+6. Delivery / Shipping
+do you deliver
+delivery within Nairobi
+how long is delivery
+delivery options
+can you deliver today
+delivery time
+shipping
+dispatch
+same day
+next day
+7. Delivery Cost
+delivery fee
+delivery cost
+shipping fee
+shipping cost
+ni how much delivery
+delivery ni ngapi
+cost ya delivery
+8. Location
+where are you located
+shop location
+boutique location
+are you in Nairobi
+where is the store
+your address please
+pin location
+share location
+9. Operating Hours
+what time do you open
+shop hours
+working hours
+when are you open
+closing time
+mnaclose saa ngapi
+today open
+are you open
+10. Payment
+m-pesa
+mpesa
+paybill
+till number
+lipa na mpesa
+payment method
+how to pay
+cash?
+card payment
+bank transfer
+11. Orders
+I want to order
+place an order
+how to order
+can I buy this
+help me order
+I want this item
+12. Returns / Exchange
+return policy
+can I return
+how do returns work
+exchange item
+return an item
+refund request
+13. Complaints / Issues
+I have a problem
+this is not what I ordered
+wrong item
+order issue
+I need help with my order
+there is a mistake
+14. Fashion Advice
+what should I wear
+fashion advice
+style tips
+what matches this
+help me style this
+what outfit works
+15. General Questions
+I have a question
+can you help me
+need assistance
+information please
+I want to ask something
+tell me more
+16. Small Talk
+how are you
+hope you're well
+nice shop
+beautiful clothes
+love your boutique
+great designs
+17. Escalation / Human Agent
+speak to someone
+human agent
+talk to staff
+customer support
+can someone help me
+I need assistance from staff
