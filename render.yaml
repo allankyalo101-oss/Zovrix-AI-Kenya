@@ -1,14 +1,38 @@
 services:
   - type: web
-    name: cloudstaff-backend
+    name: zovrix-ai-kenya
     env: python
     region: frankfurt
     plan: free
 
     buildCommand: pip install -r requirements.txt
 
-    startCommand: python app/main.py
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
 
     envVars:
       - key: PYTHON_VERSION
-        value: 3.10.13
+        value: "3.11.9"
+      - key: CLOUDOVEN_GROQ_API_KEY
+        sync: false
+      - key: CLOUDOVEN_TWILIO_SID
+        sync: false
+      - key: CLOUDOVEN_TWILIO_TOKEN
+        sync: false
+      - key: CLOUDOVEN_TWILIO_NUMBER
+        sync: false
+      - key: CLOUDOVEN_OWNER_NUMBER
+        sync: false
+      - key: KISHATECH_GROQ_API_KEY
+        sync: false
+      - key: KISHATECH_TWILIO_SID
+        sync: false
+      - key: KISHATECH_TWILIO_TOKEN
+        sync: false
+      - key: KISHATECH_TWILIO_NUMBER
+        sync: false
+      - key: KISHATECH_OWNER_NUMBER
+        sync: false
+      - key: KISHATECH_SUPABASE_URL
+        sync: false
+      - key: KISHATECH_SUPABASE_KEY
+        sync: false
