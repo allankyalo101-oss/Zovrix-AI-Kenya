@@ -28,3 +28,8 @@ ps aux | grep uvicorn
 
 
 python3 -m scripts.generate_report
+
+
+# AFRICA TALK API KEY
+atsk_cf3bd2e40135d0eee1cfcc2532c3d2081e5747ac03120272800f5c953d34e86bd9f55c6b
+
