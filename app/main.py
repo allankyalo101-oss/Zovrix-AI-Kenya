@@ -52,34 +52,23 @@ def health():
 def root():
     return {"message": "Zovrix AI Kenya — Sarah is ready"}
 
-# ── DB test (safe, deterministic) ───────────────────────
-
 DATABASE_URL = os.getenv("DATABASE_URL")
 
-engine = None
 if DATABASE_URL:
     try:
         engine = create_engine(DATABASE_URL)
-        logger.info("Database engine initialized")
+
+        @app.get("/db-test")
+        def db_test():
+            try:
+                with engine.connect() as conn:
+                    result = conn.execute(text("SELECT 1"))
+                    return {"status": "connected", "result": result.scalar()}
+            except Exception as e:
+                return {"status": "error", "message": str(e)}
+
     except Exception as e:
         logger.warning(f"DB engine init failed (non-fatal): {e}")
-else:
-    logger.info("DATABASE_URL not configured")
 
-
-@app.get("/db-test")
-def db_test():
-    if not engine:
-        return {
-            "status": "disabled",
-            "message": "DATABASE_URL not configured"
-        }
-
-    try:
-        with engine.connect() as conn:
-            result = conn.execute(text("SELECT 1"))
-            return {"status": "connected", "result": result.scalar()}
-    except Exception as e:
-        return {"status": "error", "message": str(e)}
 else:
     logger.info("DATABASE_URL not set — db-test endpoint disabled")
